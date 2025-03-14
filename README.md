@@ -1,13 +1,21 @@
+[![npm version](https://badge.fury.io/js/capacitor-secure-storage-plugin.svg)](https://badge.fury.io/js/capacitor-secure-storage-plugin)
+
 # capacitor-secure-storage-plugin
 
 Capacitor plugin for storing string values securly on iOS and Android.
 
 ## How to install
 
-For Capacitor v6
+For Capacitor v7
 
 ```bash
 npm install capacitor-secure-storage-plugin
+```
+
+For Capacitor v6 - install with fixed version 0.10.0
+
+```bash
+npm install capacitor-secure-storage-plugin@0.10.0
 ```
 
 For Capacitor v5 - install with fixed version 0.9.0
@@ -150,16 +158,16 @@ getPlatform(): Promise<{ value: string }>
 const key = 'username';
 const value = 'hellokitty2';
 
-SecureStoragePlugin.set({ key, value }).then(success => console.log(success));
+SecureStoragePlugin.set({ key, value }).then((success) => console.log(success));
 ```
 
 ```ts
 const key = 'username';
 SecureStoragePlugin.get({ key })
-  .then(value => {
+  .then((value) => {
     console.log(value);
   })
-  .catch(error => {
+  .catch((error) => {
     console.log('Item with specified key does not exist.');
   });
 ```
