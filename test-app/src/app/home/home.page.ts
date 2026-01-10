@@ -3,9 +3,10 @@ import { AlertController } from '@ionic/angular';
 import { SecureStoragePlugin } from 'capacitor-secure-storage-plugin';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+    selector: 'app-home',
+    templateUrl: 'home.page.html',
+    styleUrls: ['home.page.scss'],
+    standalone: false
 })
 export class HomePage {
   constructor(private alertController: AlertController) {}
