@@ -1,3 +1,11 @@
+## v0.13.0
+
+- migrate to capacitor 8.0
+
+## v0.12.0
+
+- add support for SPM
+
 ## v0.11.0
 
 - migrate to capacitor 7.0
@@ -18,7 +26,6 @@
 
 - migrate to capacitor 4.0
 - for Capacitor 3.X.X install version v0.7.1
-
   - `npm install capacitor-secure-storage-plugin@0.7.1`
 
 ## v0.7.1
@@ -43,10 +50,10 @@
 
 - migrate to capacitor 3.0
 - for Capacitor 2.X.X install version v0.5.1
-
   - `npm install capacitor-secure-storage-plugin@0.5.1`
 
 - import plugin in web project in Capacitor v3 is `import { SecureStoragePlugin } from 'capacitor-secure-storage-plugin';` directly, instead of import of Plugins from capacitor/cor
+
   e
 
 ## v0.5.1
